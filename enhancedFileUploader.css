@@ -1,0 +1,59 @@
+.file-previews {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.file-preview {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    width: 250px; /* Increased width */
+    position: relative;
+    background-color: #f9f9f9;
+}
+.slds-progress-bar {
+    margin-top: 0.5rem;
+}
+.preview-image {
+    max-width: 100%;
+    max-height: 200px; /* Increased height */
+    object-fit: contain; /* Ensure the image fits within the container */
+}
+
+.preview-pdf {
+    border: none;
+    width: 100%;
+    height: 250px; /* Increased height for PDFs */
+}
+
+.icon-placeholder {
+    font-size: 3rem; /* Increased icon size */
+    color: #ccc;
+    margin-bottom: 0.5rem;
+}
+
+.file-name {
+    font-size: 1rem; /* Slightly larger font */
+    word-wrap: break-word;
+    margin: 0.5rem 0;
+}
+
+.delete-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: red;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    font-weight: bold;
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

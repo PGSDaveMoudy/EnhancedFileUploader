@@ -1,0 +1,58 @@
+<template>
+    <lightning-card title="File Upload">
+        <div class="slds-m-around_medium">
+            <!-- File Selection -->
+            <lightning-input 
+                type="file"
+                multiple 
+                label="Select Files"
+                onchange={handleFileChange}
+                accept={fileTypes}>
+            </lightning-input>
+
+            <!-- File Previews -->
+            <template if:true={filePreviews}>
+                <div class="file-previews">
+                    <template for:each={filePreviews} for:item="file">
+                        <div key={file.id} class="file-preview">
+                            <!-- If Image -->
+                            <template if:true={file.isImage}>
+                                <img 
+                                    class="preview-image" 
+                                    src={file.previewUrl} 
+                                    alt={file.altText} />
+                            </template>
+                            
+                            <!-- If PDF -->
+                            <template if:true={file.isPdf}>
+                                <iframe 
+                                    class="preview-pdf" 
+                                    src={file.previewUrl} 
+                                    width="100%" 
+                                    height="150px">
+                                </iframe>
+                            </template>
+                            
+                            <!-- Fallback Icon -->
+                            <template if:true={file.showIcon}>
+                                <div class="icon-placeholder">📄</div>
+                            </template>
+
+                            <p class="file-name">{file.name}</p>
+                            
+                            <!-- Delete Button -->
+                            <button 
+                                class="delete-button" 
+                                data-id={file.id} 
+                                data-distributionid={file.distributionId}
+                                onclick={handleDelete}
+                                aria-label={file.deleteLabel}>
+                                ✕
+                            </button>
+                        </div>
+                    </template>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>
