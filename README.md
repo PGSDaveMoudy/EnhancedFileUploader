@@ -1,4 +1,6 @@
 Enhanced File Uploader LWC
+Package can be installed from here: https://login.salesforce.com/packaging/installPackage.apexp?p0=04taj0000005IfR
+
 Overview
 The Enhanced File Uploader is a Lightning Web Component (LWC) designed to simplify and enhance the file upload experience in Salesforce. It combines robust functionality, customizable styling, and seamless integration with Salesforce's platform.
 
