@@ -10,14 +10,6 @@ Easily customizable styling with CSS.
 Metadata configuration for flexible deployment in Salesforce environments.
 Project Structure
 graphql
-Copy code
-
-EnhancedFileUploader-main/
-├── FileUploadController.cls          # Apex controller for server-side logic
-├── enhancedFileUploader.css          # Stylesheet for LWC styling
-├── enhancedFileUploader.html         # Template file for LWC
-├── enhancedFileUploader.js           # Client-side logic for LWC
-└── enhancedFileUploader.js-meta.xml  # Metadata configuration for deployment
 
 
 Usage
