@@ -34,7 +34,7 @@ Contributing
 Contributions are welcome! Please submit a pull request or open an issue for suggestions and bug reports.
 
 License
-This project is licensed under the MIT License. See the LICENSE file for details.
+Complete open source - can use it however you like
 
 Repository
 Find the repository and source code on GitHub: Enhanced File Uploader
